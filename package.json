@@ -1,7 +1,19 @@
 {
+  "name": "nodelec",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "productApp.js",
+  "scripts": {
+    "start": "node lec-5/productApp.js",
+    "dev": " nodemon lec-5/productApp.js "
+  },
   "dependencies": {
     "express": "^5.2.1",
-    "init": "^0.1.2",
-    "mongoose": "^9.0.1"
+    "mongodb": "^7.0.0",
+    "mongoose": "^9.0.1",
+    "nodemon": "^3.1.11"
   }
 }
