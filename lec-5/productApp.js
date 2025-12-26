@@ -1,20 +1,21 @@
 let express = require("express")
 let mongoose = require("mongoose")
 let allProducts = require("./modals/product")
+
 let product = express()
 product.use(express.json())
 
-mongoose.connect("mongodb+srv://vk20039099_db_user:vishal%4012345@cluster0.yqvambu.mongodb.net/ ")
+mongoose.connect("mongodb://localhost:27017/userdata")
     .then(() => {
         console.log("connect mongoose successfully ");
 
     })
     .catch((err) => {
-        console.log("error  ", err);
+        console.log(" error ", err);
 
     })
 
-product.get("/products/:name", async (req, res) => {
+product.get("/products" , async (req , res) => {
     try {
        console.log("hello0")
           let products = await allProducts.find()

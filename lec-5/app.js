@@ -7,8 +7,8 @@ app.use(express.json());
 let User = require("./modals/user");
 // const user = require("./modals/user");
 
-// mongoose.connect("mongodb://localhost:27017/userdata")
-mongoose.connect("mongodb+srv://vk20039099_db_user:vishal%4012345@cluster0.yqvambu.mongodb.net/")
+mongoose.connect("mongodb://localhost:27017/userdata")
+// mongoose.connect("mongodb+srv://vk20039099_db_user:vishal%4012345@cluster0.yqvambu.mongodb.net/")
     .then(() => {
         console.log("mongoose connect")
 
@@ -53,5 +53,5 @@ app.post
 app.listen("3000", () => {
     console.log("posr no> 3000")
 })
-
+ 
 

@@ -7,13 +7,14 @@
   "type": "commonjs",
   "main": "productApp.js",
   "scripts": {
-    "start": "node lec-5/productApp.js",
-    "dev": " nodemon lec-5/productApp.js "
+    "start": "node lec-6/app.js",
+    "dev": " nodemon lec-6/app.js "
   },
   "dependencies": {
     "express": "^5.2.1",
+    "init": "^0.1.2",
     "mongodb": "^7.0.0",
-    "mongoose": "^9.0.1",
+    "mongoose": "^9.0.2",
     "nodemon": "^3.1.11"
   }
 }
